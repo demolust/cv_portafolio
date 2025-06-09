@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Resume - Software Developer</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+  <script type="text/javascript" src="assets/data/data.js"></script>
+  <script>
+  window.onload = function(){
+    document.getElementById('resume_name').textContent = resume_name;
+    document.getElementById('resume_position').textContent = resume_position;
+    document.getElementById('resume_summary').textContent = resume_summary;
+    document.getElementById('resume_phone').textContent = resume_phone;
+    document.getElementById('resume_phone').href = "tel:#"+ resume_phone;
+    document.getElementById('resume_email').textContent = resume_email;
+    document.getElementById('resume_email').href = "mailto:#" + resume_email;
+    document.getElementById('resume_location').textContent = resume_location;
+    document.getElementById('resume_github_name').textContent = resume_github_username;
+    document.getElementById('resume_github_url').href = "https://github.com/" + resume_github_username;
+    document.getElementById('resume_linkedin_name').textContent = resume_linkedin_diplayname;
+    document.getElementById('resume_linkedin_url').href = "https://linkedin.com/in/" + resume_linkedin_username;
+
+function render_tech_skill_List() {
+  document.getElementById('tech_skills_list').innerHTML = tech_skills.map((skill) => {
+    return `<li class="mb-2">${ skill }</li>`;
+  }).join('');
+}
+
+function render_prof_skill_List() {
+  document.getElementById('professional_skills_list').innerHTML = professional_skills.map((skill) => {
+    return `<li class="mb-2">${ skill }</li>`;
+  }).join('');
+}
+
+function render_lang_skill_List() {
+  document.getElementById('lang_skills_list').innerHTML = languages_skills.map((skill) => {
+    return `<li class="mb-2">${ skill }</li>`;
+  }).join('');
+}
+
+function render_work_expirience() {
+  document.getElementById('work_expirience').innerHTML = work_expirience.map((work) => {
+    return `<div class="item mb-3">
+                  <div class="item-heading row align-items-center mb-2">
+                    <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">${ work.position }</h4>
+                    <p class="item-title col-16 col-md-6 col-lg-8 mb-2 mb-md-0">${ work.company }</p>
+                    <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">${ work.years }</div>
+                  </div>
+                  <div class="item-content">
+                    <p>${ work.position_summary }</p>
+                    <ul class="resume-list">
+                    <span id="keys_${ work.company }"></span>
+                    </ul>
+                  </div>
+                </div><!--//item-->`;
+  }).join('');
+}
+
+function render_work_keys() {
+  work_expirience.map((work) => {
+    let cid = "keys_" + work.company;
+    console.log(cid);
+    document.getElementById(cid).innerHTML = work.key_acomplishments.map((key) => {
+        return `<li>${ key }</li>`;
+      }).join('');
+    });
+}
+
+function render_education_titles() {
+  document.getElementById('education_titles').innerHTML = eduction_titles.map((education) => {
+    return `<div class="item">
+              <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">${ education.title }</h4> 
+              <div class="resume-degree-org">${ education.college }</div>
+              <div class="resume-degree-time">${ education.dates }</div>
+            </div><!--//item-->`;
+  }).join('');
+}
+
+  render_lang_skill_List();
+  render_tech_skill_List();
+  render_prof_skill_List();
+  render_work_expirience(); 
+  render_work_keys();
+  render_education_titles();
+
+  };
+  </script>
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/output.css">
+  <!--
+  <link id="theme-style" rel="stylesheet" href="assets/css/output.css">
+  -->
+
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+    <div class="container px-3 px-lg-5">
+      <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+        <div class="resume-header">
+          <div class="row align-items-center">
+            <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+              <h3 id="resume_name" class="resume-name mb-0 text-uppercase"></h3>
+              <div id="resume_position" class="resume-tagline mb-3 mb-md-0"></div>
+              <img class="resume-profile-image mb-3 mb-md-0 me-md-5 ms-md-0 rounded mx-auto" src="assets/images/resume-profile.png" alt="image">
+            </div><!--//resume-title-->
+
+
+            <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+              <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Contact</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2 "></i><a id="resume_phone" class="resume-link" href="tel:#"></a></li>
+                <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a id="resume_email" class="resume-link"></a></li>
+                  <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i><span id="resume_location"></span></li>
+                <li class="list-inline-item mb-lg-0 me-3"><a id="resume_github_url" class="resume-link"><i
+                      class="fa-brands fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span
+                      id="resume_github_name" class="d-none d-lg-inline-block text-muted"></span></a></li>
+                <li class="list-inline-item mb-lg-0 me-3"><a id="resume_linkedin_url" class="resume-link"><i
+                      class="fa-brands fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span id="resume_linkedin_name"
+                      class="d-none d-lg-inline-block text-muted"></span></a></li>
+            </div><!--//resume-contact-->
+          </div><!--//row-->
+
+        </div><!--//resume-header-->
+
+        <hr>
+        <div class="resume-intro py-3">
+          <div class="row align-items-center">
+
+            <div class="col text-start">
+              <p id="resume_summary" class="mb-0"></p>
+            </div><!--//col-->
+
+          </div>
+        </div><!--//resume-intro-->
+
+        <hr>
+        <div class="resume-body">
+          <div class="row">
+            <div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+              <section class="work-section py-3">
+                <h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+                  <span id="work_expirience"> </span>
+
+              </section><!--//work-section-->
+
+              <section class="education-section py-3">
+                <h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+
+                <span id="education_titles"></span>
+              </section><!--//education-section-->
+
+            </div><!--//resume-main-->
+            <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+              <section class="skills-section py-3">
+                <h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+                <div class="item">
+                  <h4 class="item-title">Technical</h4>
+                  <ul id="tech_skills_list" class="list-unstyled resume-skills-list">
+                  </ul>
+                </div><!--//item-->
+
+                <div class="item">
+                  <h4 class="item-title">Professional</h4>
+                  <ul id="professional_skills_list" class="list-unstyled resume-skills-list">
+                  </ul>
+                </div><!--//item-->
+              </section><!--//skills-section-->
+
+              <section class="skills-section py-3">
+                <h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+                <ul id="lang_skills_list" class="list-unstyled resume-lang-list">
+                </ul>
+              </section><!--//languages-section-->
+
+            </aside><!--//resume-aside-->
+          </div><!--//row-->
+        </div><!--//resume-body-->
+        <hr>
+        <div class="resume-footer text-center">
+        </div><!--//resume-footer-->
+      </article>
+
+    </div><!--//container-->
+
+    <footer class="footer text-center py-4">
+      <small class="copyright text-muted">Original design by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+        <br></br>
+      <small class="copyright text-muted">Use this template on <a class="theme-link" href="https://github.com/demolust" target="_blank">demolust cv</a</small>
+    </footer>
+
+  </div><!--//main-wrapper-->
+
+    <script>console.log(tech_skills)</script>
+
+</body>
+
+</html>
