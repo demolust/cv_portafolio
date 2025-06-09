@@ -32,19 +32,19 @@
 
 function render_tech_skill_List() {
   document.getElementById('tech_skills_list').innerHTML = tech_skills.map((skill) => {
-    return `<li class="mb-2">${ skill }</li>`;
+    return `<li style="font-size:14px" class="mb-2">${ skill }</li>`;
   }).join('');
 }
 
 function render_prof_skill_List() {
   document.getElementById('professional_skills_list').innerHTML = professional_skills.map((skill) => {
-    return `<li class="mb-2">${ skill }</li>`;
+    return `<li style="font-size:14px" class="mb-2">${ skill }</li>`;
   }).join('');
 }
 
 function render_lang_skill_List() {
   document.getElementById('lang_skills_list').innerHTML = languages_skills.map((skill) => {
-    return `<li class="mb-2">${ skill }</li>`;
+    return `<li style="font-size:14px" class="mb-2">${ skill }</li>`;
   }).join('');
 }
 
@@ -57,7 +57,7 @@ function render_work_expirience() {
                     <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">${ work.years }</div>
                   </div>
                   <div class="item-content">
-                    <p>${ work.position_summary }</p>
+                    <p style="font-size:15px">${ work.position_summary }</p>
                     <ul class="resume-list">
                     <span id="keys_${ work.company }"></span>
                     </ul>
@@ -71,7 +71,7 @@ function render_work_keys() {
     let cid = "keys_" + work.company;
     console.log(cid);
     document.getElementById(cid).innerHTML = work.key_acomplishments.map((key) => {
-        return `<li>${ key }</li>`;
+        return `<li style="font-size:15px">${ key }</li>`;
       }).join('');
     });
 }
@@ -80,8 +80,8 @@ function render_education_titles() {
   document.getElementById('education_titles').innerHTML = eduction_titles.map((education) => {
     return `<div class="item">
               <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">${ education.title }</h4> 
-              <div class="resume-degree-org">${ education.college }</div>
-              <div class="resume-degree-time">${ education.dates }</div>
+              <div style="font-size:15px" class="resume-degree-org">${ education.college }</div>
+              <div style="font-size:15px" class="resume-degree-time">${ education.dates }</div>
             </div><!--//item-->`;
   }).join('');
 }
@@ -140,7 +140,7 @@ function render_education_titles() {
           <div class="row align-items-center">
 
             <div class="col text-start">
-              <p id="resume_summary" class="mb-0"></p>
+              <p id="resume_summary" style="font-size:15px" class="mb-0"></p>
             </div><!--//col-->
 
           </div>
