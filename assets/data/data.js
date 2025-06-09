@@ -7,7 +7,7 @@ const resume_phone = "+52 8122920893";
 const resume_email = "jorgecch97@hotmail.com";
 const resume_location = "Nuevo Leon";
 const resume_website = "www.resume_website.com"
-const resume_linkedin_diplayname = "Jorge Adrin Castro Chapa"
+const resume_linkedin_diplayname = "Jorge Adrian Castro Chapa"
 const resume_linkedin_username = "jorge-adrian-castro-chapa-28a315167";
 const resume_github_username = "demolust";
 
