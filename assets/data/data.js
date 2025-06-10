@@ -6,8 +6,8 @@ Proven track record of designing, developing, and maintaining automation tools &
 Possessing a strong foundation in Linux System Administration, Python, Infrastructure as Code, Configuration Management, Automation Platforms, proficient at delivering comprehensive solutions that significantly enhance operational efficiency, reliability, and scalability.`,
   phone: "+52 8122920893",
   email: "jorgecch97@hotmail.com",
-  location: "Nuevo Leon",
-  website: "www.resume_website.com",
+  location: "Nuevo León",
+  website: "https://demolust.github.io/cv_portafolio/",
   github: {
     username: "demolust",
     url: "https://github.com/demolust"
@@ -64,6 +64,7 @@ Provided tech support on production lines and manufacturing testing environments
     { title : "Specialized Technician in Electricity and Electronics", college : "Universidad Autónoma de Nuevo León", dates : "2015 - 2017" },
     ]
   },
+  // Add more categories as needed
 ]
 
 const sidebarSkills = [
@@ -91,32 +92,6 @@ const sidebarSections = [
       "English (Professional)", "Spanish (Native)", "German (Elementary)"
     ]
   },
+  // Add more categories as needed
 ];
 
-
-const sidebarSections_ = [
-  {
-    id: "tech_skills",
-    title: "Technical Skills",
-    type: "skills", // or another type if you want custom rendering
-    items: [
-      "Python", "Linux", "Bash", "Automation", "QA Testing", "Sys Admin", "DevOps", "CI/CD (GitHub/GitLab)", "IaC (Ansible/Terraform)"
-    ]
-  },
-  {
-    id: "professional_skills",
-    title: "Professional Skills",
-    type: "skills",
-    items: [
-      "Analytical interpretation", "Problem-solving", "Proactive", "Committed", "Disciplined"
-    ]
-  },
-  {
-    id: "languages",
-    title: "Languages",
-    type: "languages",
-    items: [
-      "English (Professional)", "Spanish (Native)", "German (Elementary)"
-    ]
-  },
-];
