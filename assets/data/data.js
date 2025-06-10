@@ -1,21 +1,30 @@
-const resume_name = "Jorge Adrian Castro Chapa";
-const resume_position = "QA & Automation Software Engineer";
-const resume_summary = `Results-driven and committed Software Engineer with 6+ years of experience driving growth through innovative solutions including Scripting & Automation, QA, DevOps, passionate about Linux, Software Testing, Test Automation (Tooling, Frameworks, Infrastructure), and scaling teams.
+const personalInfo = {
+  fullName: "Jorge Adrian Castro Chapa",
+  jobTitle: "QA & Automation Software Engineer",
+  summary: `Results-driven and committed Software Engineer with 6+ years of experience driving growth through innovative solutions including Scripting & Automation, QA, DevOps, passionate about Linux, Software Testing, Test Automation (Tooling, Frameworks, Infrastructure), and scaling teams.
 Proven track record of designing, developing, and maintaining automation tools & scripts and frameworks that deliver tangible value. Skilled in crafting robust testing strategies, defining CI/CD pipelines, implementing IaC for hybrid, cloud & on-premises, environments.
-Possessing a strong foundation in Linux System Administration, Python, Infrastructure as Code, Configuration Management, Automation Platforms, proficient at delivering comprehensive solutions that significantly enhance operational efficiency, reliability, and scalability`;
-const resume_phone = "+52 8122920893";
-const resume_email = "jorgecch97@hotmail.com";
-const resume_location = "Nuevo Leon";
-const resume_website = "www.resume_website.com"
-const resume_linkedin_diplayname = "Jorge Adrian Castro Chapa"
-const resume_linkedin_username = "jorge-adrian-castro-chapa-28a315167";
-const resume_github_username = "demolust";
+Possessing a strong foundation in Linux System Administration, Python, Infrastructure as Code, Configuration Management, Automation Platforms, proficient at delivering comprehensive solutions that significantly enhance operational efficiency, reliability, and scalability.`,
+  phone: "+52 8122920893",
+  email: "jorgecch97@hotmail.com",
+  location: "Nuevo Leon",
+  website: "www.resume_website.com",
+  github: {
+    username: "demolust",
+    url: "https://github.com/demolust"
+  },
+  linkedin: {
+    displayName: "Jorge Adrian Castro Chapa",
+    url: "https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167"
+  },
+  profileImage: "assets/images/resume-profile.png"
+};
 
-const tech_skills = [ "Python", "Linux", "Bash", "Automation", "QA Testing", "Sys Admin", "DevOps", "CI/CD (GitHub/GitLab)", "IaC (Ansible/Terraform) "];
-const professional_skills = [ "Analytical interpretation", "Problem-solving", "Proactive", "Committed", "Disciplined" ];
-const languages_skills = [ "English (Professional)", "Spanish (Native)", "German (Elementary)" ];
-
-const work_expirience = [ 
+const sections = [
+  {
+    id: "work_experience",
+    title: "Work Experiences",
+    type: "work",
+    items: [ 
   { position : "QA & Automation Software Engineer", company : "Oracle", years : "May 2022 - Present", 
     position_summary : `Spearheaded the design and development of general and automated solutions to enhance the Oracle Linux QA development cycle. Led the creation of comprehensive code automation and pipeline implementations for provisioning SmartNIC's & Hosts, user-space package testing, OCI SDK's validation including .NET, PowerShell, Typescript, kernel-space testing including hugepages, FIPS validation`,
     key_acomplishments : [ "Designed and developed a framework for automating the installation of Oracle Linux on SmartNIC systems, significantly reducing the full QA cycle time 80% from about 8-10 days to 1-2 days", 
@@ -45,11 +54,69 @@ Provided tech support on production lines and manufacturing testing environments
     ] 
   },
 ]
-
-const eduction_titles = [
-  { title : "Mechatronics Engineer", college : "Universidad Autónoma de Nuevo León", dates : "2014 - 2019" },
-  { title : "Specialized Technician in Electricity and Electronics", college : "Universidad Autónoma de Nuevo León", dates : "2015 - 2017" },
+  },
+  {
+    id: "education",
+    title: "Education",
+    type: "education",
+    items: [
+    { title : "Mechatronics Engineer", college : "Universidad Autónoma de Nuevo León", dates : "2014 - 2019" },
+    { title : "Specialized Technician in Electricity and Electronics", college : "Universidad Autónoma de Nuevo León", dates : "2015 - 2017" },
+    ]
+  },
 ]
 
+const sidebarSkills = [
+  {
+    subheader: "Technical",
+    items: [
+      "Python", "Linux", "Bash", "Automation", "QA Testing", "Sys Admin", "DevOps", "CI/CD (GitHub/GitLab)", "IaC (Ansible/Terraform)"
+    ]
+  },
+  {
+    subheader: "Professional",
+    items: [
+      "Analytical Interpretation", "Problem-Solving", "Proactive", "Committed", "Disciplined"
+    ]
+  },
+  // Add more categories as needed
+];
+
+const sidebarSections = [
+  {
+    id: "languages",
+    title: "Languages",
+    type: "languages",
+    items: [
+      "English (Professional)", "Spanish (Native)", "German (Elementary)"
+    ]
+  },
+];
 
 
+const sidebarSections_ = [
+  {
+    id: "tech_skills",
+    title: "Technical Skills",
+    type: "skills", // or another type if you want custom rendering
+    items: [
+      "Python", "Linux", "Bash", "Automation", "QA Testing", "Sys Admin", "DevOps", "CI/CD (GitHub/GitLab)", "IaC (Ansible/Terraform)"
+    ]
+  },
+  {
+    id: "professional_skills",
+    title: "Professional Skills",
+    type: "skills",
+    items: [
+      "Analytical interpretation", "Problem-solving", "Proactive", "Committed", "Disciplined"
+    ]
+  },
+  {
+    id: "languages",
+    title: "Languages",
+    type: "languages",
+    items: [
+      "English (Professional)", "Spanish (Native)", "German (Elementary)"
+    ]
+  },
+];
