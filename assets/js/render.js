@@ -1,10 +1,13 @@
-
 // Render header and sidebar info
 window.addEventListener('DOMContentLoaded', () => {
+  personalInfo = data.personalInfo;
+  sections = data.sections;
+  sidebarSkills = data.sidebarSkills;
+  sidebarSections = data.sidebarSections;
   document.getElementById('main_title').textContent = `Resume - ${personalInfo.fullName}`;
   document.getElementById('full_name').textContent = personalInfo.fullName;
   document.getElementById('job_title').textContent = personalInfo.jobTitle;
-  document.getElementById('summary').textContent = personalInfo.summary;
+  document.getElementById('summary').innerHTML = personalInfo.summary.replaceAll('\n', '<br/>');
   document.getElementById('phone').textContent = personalInfo.phone;
   document.getElementById('phone').href = `tel:${personalInfo.phone}`;
   document.getElementById('email').textContent = personalInfo.email;
@@ -16,14 +19,12 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('linkedin_url').href = personalInfo.linkedin.url;
   document.getElementById('profile_image').src = personalInfo.profileImage;
 
-
   // DYNAMIC SECTIONS RENDERING
   const container = document.getElementById('dynamic_sections');
   container.innerHTML = sections.map(section => renderSection(section)).join('');
 
-
-  const SkillsSideBar = document.getElementById('sidebar_skills_section')
-  SkillsSideBar.innerHTML = renderSidebarSkills(sidebarSkills);
+  const skillssidebar = document.getElementById('sidebar_skills_section')
+  skillssidebar.innerHTML = renderSidebarSkills(sidebarSkills);
 
   const sidebar = document.getElementById('sidebar_sections');
   sidebar.innerHTML = sidebarSections.map(renderSidebarSection).join('');
@@ -42,7 +43,7 @@ function renderSection(section) {
               <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">${work.years}</div>
             </div>
             <div class="item-content">
-              <p style="font-size:15px">${work.position_summary}</p>
+              <p style="font-size:15px">${work.position_summary.replaceAll('\n', '<br/>')}</p>
               <ul class="resume-list">
                 ${work.key_acomplishments.map(key => `<li style="font-size:15px">${key}</li>`).join('')}
               </ul>
