@@ -66,3 +66,8 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 **Feel free to fork this project and make it your own!**  
 For questions, open an issue or contribute a pull request.
 
+## Original Credits
+- Original design by [xriley](https://github.com/xriley) on [DevResume-Theme](https://github.com/xriley/DevResume-Theme)
+- [Bootstrap](http://getbootstrap.com/)
+- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
+
