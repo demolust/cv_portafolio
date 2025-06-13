@@ -8,7 +8,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 ## What This Project Does
 
 - **Displays a professional resume:** Renders your name, contact info, skills, work experience, and education in a modern, responsive format.
-- **Customization via JavaScript:** All resume content is stored in a single JavaScript file (`data.js`). Change the data to reflect any person’s resume—no need to edit HTML.
+- **Customization via a yaml file:** All resume content is stored in a single yaml file (`resume.yaml`). There is a small CI/CD that translates the yaml file to a js file stored as `./assets/data/data.js`. Simply change the data in the yaml to reflect any person’s resume.
 - **Easy to deploy:** Host your resume online for free using GitHub Pages.
 
 ---
@@ -16,15 +16,12 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 ## How to Change or Adjust the Info
 
 1. **Edit Personal Data:**
-   - Open `assets/data/data.js`.
-   - Update the variables (`personalInfo.fullName`, `personalInfo.jobTitle`, `personalInfo.email`, etc.) with your information.
-   - Update the `section` arrays for work experience, education and anything else you consider relevant for the primary section, the `sidebarSkills` with your skills and the `sidebarSections` for anything you want displayed there.
+   - Open `resume.yaml`.
+   - Update the `personalInfo` section with your information.
+   - Update the `sections` area for work experience, education and anything else you consider relevant for the primary section, the `sidebarSkills` section with your skills and the `sidebarSections` section for anything you want displayed there.
 
 2. **Change the Profile Image:**
-   - Replace `assets/images/resume-profile.png` with your own image (keep the same file name or update the `personalInfo.profileImage` variable if you use a different one).
-
-3. **Adjust Skills, Experience, and Education:**
-   - Add, remove, or modify items in the corresponding JavaScript arrays in `data.js`.
+   - Replace `assets/images/resume-profile.png` with your own image (keep the same file name or update the `personalInfo.profileImage` area if you use a different one).
 
 ---
 
@@ -37,6 +34,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
   - `render.js` contains all the Javascript code that will be executed and will populate it the ` index.html` file with necessary HTML tags
   - The inline `<script>` tags inside `index.html` imports the data and dynamically populates the HTML placeholders with your information.
 - **Assets:** Images and icons are stored in the `assets/images` and `assets/fontawesome` directories.
+- **Resume data (`resume.yaml`):** Contains all the resume data & uses a CI/CD pipeline to translate to `assets/data/data.js`
 
 ---
 
@@ -67,5 +65,4 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 
 **Feel free to fork this project and make it your own!**  
 For questions, open an issue or contribute a pull request.
-
 
