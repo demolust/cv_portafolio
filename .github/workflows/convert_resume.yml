@@ -1,0 +1,43 @@
+name: Convert resume from yaml to a js file (workaround)
+
+on:
+  push:
+    paths:
+      - "resume.yaml"
+
+jobs:
+  convert_and_push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install yq
+        run: |
+          sudo wget -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Convert yaml to json file (js extension) and store in the assets/data path
+        run: |
+          mkdir -p assets/data
+          yq -p yaml -o json resume.yaml > assets/data/data.js
+
+      - name: Modify the json to be a js file, using sed (workaround)
+        run: |
+          sed -i '1s/^{/const data = {/g' assets/data/data.js
+
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add assets/data/data.js
+          git commit -m "ci: Convert resume from yaml to a js file" || echo "No changes to commit"
+          git push origin HEAD:${GITHUB_REF#refs/heads/}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
