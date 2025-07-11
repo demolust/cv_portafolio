@@ -1,7 +1,7 @@
 const data = {
   "personalInfo": {
     "fullName": "Jorge Adrian Castro Chapa",
-    "jobTitle": "Software Automation and Development Engineer in Test",
+    "jobTitle": "Software Development Engineer in Test",
     "summary": "Results-driven and committed Software Engineer with 6+ years of experience driving growth through innovative solutions including Scripting & Automation, QA, DevOps, passionate about Linux, Software Testing, Test Automation (Tooling, Frameworks, Infrastructure), and scaling teams.\nProven track record of designing, developing, and maintaining automation tools & scripts and frameworks that deliver tangible value. Skilled in crafting robust testing strategies, defining CI/CD pipelines, implementing IaC for hybrid, cloud & on-premises, environments.\nPossessing a strong foundation in Linux System Administration, Python, Infrastructure as Code, Configuration Management, Automation Platforms, proficient at delivering comprehensive solutions that significantly enhance operational efficiency, reliability, and scalability.",
     "phone": "***REMOVED***",
     "email": "***REMOVED***",
@@ -24,7 +24,7 @@ const data = {
       "type": "work",
       "items": [
         {
-          "position": "Software Automation and Development Engineer in Test",
+          "position": "Software Development Engineer in Test",
           "company": "Oracle",
           "years": "May 2022 - Present",
           "position_summary": "Spearheaded the design and development of general and automated solutions to enhance the Oracle Linux QA development cycle. Led the creation of comprehensive code automation and pipeline implementations for provisioning SmartNIC's & Hosts, user-space package testing, OCI SDK's validation including .NET, PowerShell, Typescript, kernel-space testing including hugepages, FIPS validation",
