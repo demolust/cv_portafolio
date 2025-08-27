@@ -8,13 +8,25 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('full_name').textContent = personalInfo.fullName;
   document.getElementById('job_title').textContent = personalInfo.jobTitle;
   document.getElementById('summary').innerHTML = personalInfo.summary.replaceAll('\n', '<br/>');
-  document.getElementById('phone').textContent = personalInfo.phone;
-  document.getElementById('phone').href = `tel:${personalInfo.phone}`;
-  document.getElementById('email').textContent = personalInfo.email;
-  document.getElementById('email').href = `mailto:${personalInfo.email}`;
-  document.getElementById('location').textContent = personalInfo.location;
   document.getElementById('linkedin_display_name').textContent = personalInfo.linkedin.displayName;
   document.getElementById('linkedin_url').href = personalInfo.linkedin.url;
+  if (personalInfo.email) {
+    document.getElementById('email').textContent = personalInfo.email;
+    document.getElementById('email').href = `mailto:${personalInfo.email}`;
+  } else {
+    document.getElementById('email').outerHTML = "";
+  }
+  if (personalInfo.phone) {
+    document.getElementById('phone').textContent = personalInfo.phone;
+    document.getElementById('phone').href = `tel:${personalInfo.phone}`;
+  } else {
+    document.getElementById('phone').outerHTML = "";
+  }
+  if (personalInfo.location) {
+    document.getElementById('location').textContent = personalInfo.location;
+  } else {
+    document.getElementById('location').outerHTML = "";
+  }
   if (personalInfo.github) {
     document.getElementById('github_username').textContent = personalInfo.github.username;
     document.getElementById('github_url').href = personalInfo.github.url;
