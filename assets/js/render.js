@@ -13,11 +13,27 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('email').textContent = personalInfo.email;
   document.getElementById('email').href = `mailto:${personalInfo.email}`;
   document.getElementById('location').textContent = personalInfo.location;
-  document.getElementById('github_username').textContent = personalInfo.github.username;
-  document.getElementById('github_url').href = personalInfo.github.url;
   document.getElementById('linkedin_display_name').textContent = personalInfo.linkedin.displayName;
   document.getElementById('linkedin_url').href = personalInfo.linkedin.url;
-  document.getElementById('profile_image').src = personalInfo.profileImage;
+  if (personalInfo.github) {
+    document.getElementById('github_username').textContent = personalInfo.github.username;
+    document.getElementById('github_url').href = personalInfo.github.url;
+  } else {
+    document.getElementById('github_url').outerHTML = "";
+  }
+  if (personalInfo.profileImage) {
+    document.getElementById('profile_image').src = personalInfo.profileImage;
+  } else {
+    document.getElementById('profile_image').outerHTML = "";
+  }
+  if (personalInfo.website) {
+    document.getElementById('website_name').textContent = personalInfo.website.name;
+    ;
+    document.getElementById('website_url').href = personalInfo.website.url;
+  } else {
+    document.getElementById('website_url').outerHTML = "";
+  }
+
 
   // DYNAMIC SECTIONS RENDERING
   const container = document.getElementById('dynamic_sections');

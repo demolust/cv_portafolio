@@ -2,11 +2,11 @@ const data = {
   "personalInfo": {
     "fullName": "Jorge Adrian Castro Chapa",
     "jobTitle": "Software Development Engineer in Test",
+    "profileImage": "assets/images/resume-profile.png",
     "summary": "Results-driven and committed Software Engineer with 6+ years of experience driving growth through innovative solutions including Scripting & Automation, QA, DevOps, passionate about Linux, Software Testing, Test Automation (Tooling, Frameworks, Infrastructure), and scaling teams.\nProven track record of designing, developing, and maintaining automation tools & scripts and frameworks that deliver tangible value. Skilled in crafting robust testing strategies, defining CI/CD pipelines, implementing IaC for hybrid, cloud & on-premises, environments.\nPossessing a strong foundation in Linux System Administration, Python, Infrastructure as Code, Configuration Management, Automation Platforms, proficient at delivering comprehensive solutions that significantly enhance operational efficiency, reliability, and scalability.",
     "phone": "***REMOVED***",
     "email": "***REMOVED***",
     "location": "Nuevo León",
-    "website": "https://demolust.github.io/cv_portafolio/",
     "github": {
       "username": "demolust",
       "url": "https://github.com/demolust"
@@ -15,7 +15,6 @@ const data = {
       "displayName": "Jorge Adrian Castro Chapa",
       "url": "https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167"
     },
-    "profileImage": "assets/images/resume-profile.png"
   },
   "sections": [
     {

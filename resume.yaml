@@ -1,6 +1,7 @@
 personalInfo:
   fullName: "Jorge Adrian Castro Chapa"
   jobTitle: "Software Development Engineer in Test"
+  profileImage: "assets/images/resume-profile.png"
   summary: |-
     Results-driven and committed Software Engineer with 6+ years of experience driving growth through innovative solutions including Scripting & Automation, QA, DevOps, passionate about Linux, Software Testing, Test Automation (Tooling, Frameworks, Infrastructure), and scaling teams.
     Proven track record of designing, developing, and maintaining automation tools & scripts and frameworks that deliver tangible value. Skilled in crafting robust testing strategies, defining CI/CD pipelines, implementing IaC for hybrid, cloud & on-premises, environments.
@@ -8,14 +9,12 @@ personalInfo:
   phone: "***REMOVED***"
   email: "***REMOVED***"
   location: "Nuevo León"
-  website: "https://demolust.github.io/cv_portafolio/"
   github:
     username: "demolust"
     url: "https://github.com/demolust"
   linkedin:
     displayName: "Jorge Adrian Castro Chapa"
     url: "https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167"
-  profileImage: "assets/images/resume-profile.png"
 
 sections:
   - id: "work_experience"
