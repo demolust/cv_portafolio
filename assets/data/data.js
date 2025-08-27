@@ -14,7 +14,7 @@ const data = {
     "linkedin": {
       "displayName": "Jorge Adrian Castro Chapa",
       "url": "https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167"
-    },
+    }
   },
   "sections": [
     {
