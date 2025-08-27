@@ -14,18 +14,18 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('email').textContent = personalInfo.email;
     document.getElementById('email').href = `mailto:${personalInfo.email}`;
   } else {
-    document.getElementById('email').outerHTML = "";
+    document.getElementById('gen_email').innerHTML = "";
   }
   if (personalInfo.phone) {
     document.getElementById('phone').textContent = personalInfo.phone;
     document.getElementById('phone').href = `tel:${personalInfo.phone}`;
   } else {
-    document.getElementById('phone').outerHTML = "";
+    document.getElementById('gen_phone').innerHTML = "";
   }
   if (personalInfo.location) {
     document.getElementById('location').textContent = personalInfo.location;
   } else {
-    document.getElementById('location').outerHTML = "";
+    document.getElementById('gen_location').innerHTML = "";
   }
   if (personalInfo.github) {
     document.getElementById('github_username').textContent = personalInfo.github.username;
