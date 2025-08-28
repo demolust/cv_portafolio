@@ -8,8 +8,7 @@ const data = {
     "phone": "***REMOVED***",
     "location": "Nuevo León",
     "github": {
-      "username": "demolust",
-      "url": "https://github.com/demolust"
+      "username": "demolust"
     },
     "linkedin": {
       "displayName": "Jorge Adrian Castro Chapa",
