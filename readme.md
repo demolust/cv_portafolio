@@ -10,6 +10,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 - **Displays a professional resume:** Renders your name, contact info, skills, work experience, and education in a modern, responsive format.
 - **Customization via a yaml file:** All resume content is stored in a single yaml file (`resume.yaml`). There is a small CI/CD that translates the yaml file to a js file stored as `./assets/data/data.js`. Simply change the data in the yaml to reflect any person’s resume.
 - **Easy to deploy:** Host your resume online for free using GitHub Pages.
+- **Create automatic PDF's:** Push a tag and the workflow will create a release for you using the given tag also the release action uploads the final PDF as a release asset, the asset will include the given tag in is name for uniqueness
 
 ---
 
