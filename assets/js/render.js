@@ -10,42 +10,67 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('summary').innerHTML = personalInfo.summary.replaceAll('\n', '<br/>');
   document.getElementById('linkedin_display_name').textContent = personalInfo.linkedin.displayName;
   document.getElementById('linkedin_url').href = personalInfo.linkedin.url;
-  if (personalInfo.email) {
-    document.getElementById('email').textContent = personalInfo.email;
-    document.getElementById('email').href = `mailto:${personalInfo.email}`;
-  } else {
-    document.getElementById('gen_email').innerHTML = "";
-  }
-  if (personalInfo.phone) {
-    document.getElementById('phone').textContent = personalInfo.phone;
-    document.getElementById('phone').href = `tel:${personalInfo.phone}`;
-  } else {
-    document.getElementById('gen_phone').innerHTML = "";
-  }
-  if (personalInfo.location) {
-    document.getElementById('location').textContent = personalInfo.location;
-  } else {
-    document.getElementById('gen_location').innerHTML = "";
-  }
-  if (personalInfo.github) {
-    document.getElementById('github_username').textContent = personalInfo.github.username;
-    document.getElementById('github_url').href = personalInfo.github.url;
-  } else {
-    document.getElementById('github_url').outerHTML = "";
-  }
-  if (personalInfo.profileImage) {
-    document.getElementById('profile_image').src = personalInfo.profileImage;
-  } else {
-    document.getElementById('profile_image').outerHTML = "";
-  }
-  if (personalInfo.website) {
-    document.getElementById('website_name').textContent = personalInfo.website.name;
-    ;
-    document.getElementById('website_url').href = personalInfo.website.url;
-  } else {
-    document.getElementById('website_url').outerHTML = "";
-  }
+  const webEL = document.getElementById('website_url');
+  const githbEL = document.getElementById('github_url');
+  const emailEL = document.getElementById('email');
+  const phoneEL = document.getElementById('phone');
+  const profImgEL = document.getElementById('profile_image');
+  const infoMap = [
+    {
+      prop: "email",
+      action: value => {
+        emailEL.textContent = value;
+        emailEL.href = `mailto:${value}`;
+      },
+      elseAction: () => document.getElementById('gen_email').innerHTML = ""
+    },
+    {
+      prop: "phone",
+      action: value => {
+        phoneEL.textContent = personalInfo.phone;
+        phoneEL.href = `tel:${personalInfo.phone}`;
+      },
+      elseAction: () => document.getElementById('gen_phone').innerHTML = ""
+    },
+    {
+      prop: "location",
+      action: value => {
+        document.getElementById('location').textContent = personalInfo.location;
+      },
+      elseAction: () => document.getElementById('gen_location').innerHTML = ""
+    },
+    {
+      prop: "github",
+      action: value => {
+        githbEL.href = `https://github.com/${personalInfo.github.username}`;
+        document.getElementById('github_username').textContent = personalInfo.github.username;
+      },
+      elseAction: () => githbEL.outerHTML = ""
+    },
+    {
+      prop: "profileImage",
+      action: value => {
+        profImgEL.src = personalInfo.profileImage;
+      },
+      elseAction: () => profImgEL.outerHTML = ""
+    },
+    {
+      prop: "website",
+      action: value => {
+        webEL.href = personalInfo.website.url;
+        document.getElementById('website_name').textContent = personalInfo.website.name;
+      },
+      elseAction: () => webEL.outerHTML = ""
+    },
+  ];
 
+  infoMap.forEach(({ prop, action, elseAction }) => {
+    if (personalInfo[prop]) {
+      action(personalInfo[prop]);
+    } else {
+      elseAction();
+    }
+  });
 
   // DYNAMIC SECTIONS RENDERING
   const container = document.getElementById('dynamic_sections');
