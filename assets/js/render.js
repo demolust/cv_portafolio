@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
         githbEL.href = `https://github.com/${personalInfo.github.username}`;
         document.getElementById('github_username').textContent = personalInfo.github.username;
       },
-      elseAction: () => githbEL.outerHTML = ""
+      elseAction: () => document.getElementById('gen_github').outerHTML = ""
     },
     {
       prop: "profileImage",
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
         webEL.href = personalInfo.website.url;
         document.getElementById('website_name').textContent = personalInfo.website.name;
       },
-      elseAction: () => webEL.outerHTML = ""
+      elseAction: () => document.getElementById('gen_website').outerHTML = ""
     },
   ];
 
