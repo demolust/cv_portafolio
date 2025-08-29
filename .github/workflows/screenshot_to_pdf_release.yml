@@ -33,7 +33,7 @@ jobs:
           pip install playwright
 
       - name: Install Playwright browsers
-        run: playwright install
+        run: playwright install --with-deps 
 
       - name: Run Playwright screenshot script
         run: |
