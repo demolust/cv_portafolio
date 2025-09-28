@@ -18,7 +18,7 @@ const data = {
   "sections": [
     {
       "id": "work_experience",
-      "title": "Work Experiences",
+      "title": "Experience",
       "type": "work",
       "items": [
         {
