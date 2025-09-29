@@ -123,6 +123,16 @@ function renderSection(section) {
         `<li><a href="${article.url}" target="_blank">${article.title}</a> (${article.date})</li>`
       ).join('') +
       `</ul>`;
+  } else if (section.type === "projects") {
+    html += `<ul class="resume-list">` +
+      section.items.map(project =>
+        `<li><a href="${project.url}" target="_blank">${project.title}</a></li>
+          <div class="item-content">
+          <p style="font-size:15px">${project.project_summary.replaceAll('\n', '<br/>')}</p>
+          </div>
+        `
+      ).join('') +
+      `</ul>`;
   } else {
     // Fallback: simple list
     html += `<ul class="resume-list">` +
