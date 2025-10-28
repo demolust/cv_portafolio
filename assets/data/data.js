@@ -75,18 +75,6 @@ const data = {
           "dates": "2015 - 2017"
         }
       ]
-    },
-    {
-      "id": "projects",
-      "title": "Projects",
-      "type": "projects",
-      "items": [
-        {
-          "title": "cv_portafolio",
-          "url": "http://www.github.com/demolust/cv_portafolio",
-          "project_summary": "A customizable, dynamic resume website built with JavaScript, HTML & CSS. Deployed using GitHub Pages. With two Github-Actions pipelines one to automatically create PDF's from the website using Playwright and another one to translate the resume yaml file to a json file"
-        }
-      ]
     }
   ],
   "sidebarSkills": [
