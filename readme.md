@@ -8,7 +8,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 ## What This Project Does
 
 - **Displays a professional resume:** Renders your name, contact info, skills, work experience, and education in a modern, responsive format.
-- **Customization via a yaml file:** All resume content is stored in a single yaml file (`resume.yaml`). There is a small CI/CD that translates the yaml file to a js file stored as `./assets/js/data.js`. Simply change the data in the yaml to reflect any person’s resume.
+- **Customization via a yaml file:** All resume content is stored in a single yaml file (`resume.yaml`). There is a small CI/CD that translates the yaml file to a JS file stored as `./assets/js/data.js`. Simply change the data in the yaml to reflect any person’s resume.
 - **Easy to deploy:** Host your resume online for free using GitHub Pages.
 - **Create automatic PDF's:** Push a tag and the workflow will create a release for you using the given tag also the release action uploads the final PDF as a release asset, the asset will include the given tag in is name for uniqueness
 
@@ -32,7 +32,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 - **CSS (`assets/css/resume.css`):** Provides all visual styling, ensuring your resume looks modern and professional.
 - **JavaScript (`assets/js/data.js` + `assets/js/render.js`):**  
   - `data.js` contains all resume data as JavaScript variables and arrays.
-  - `render.js` contains all the Javascript code that will be executed and will populate it the ` index.html` file with necessary HTML tags
+  - `render.js` contains all the JavaScript code that will be executed and will populate it the ` index.html` file with necessary HTML tags
   - The inline `<script>` tags inside `index.html` imports the data and dynamically populates the HTML placeholders with your information.
 - **Assets:** Images and icons are stored in the `assets/images` and `assets/fontawesome` directories.
 - **Resume data (`resume.yaml`):** Contains all the resume data & uses a CI/CD pipeline to translate to `assets/js/data.js`
@@ -52,7 +52,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
    - Click **Save**.
 
 3. **Access Your Resume:**
-   - After a few minutes, your resume will be live at `https://<your-username>.github.io/<repository-name>/`.
+   - After waiting some minutes, the resume will be live at `https://<your-username>.github.io/<repository-name>/`.
 
 ---
 
@@ -64,8 +64,8 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 
 ---
 
-**Feel free to fork this project and make it your own!**  
-For questions, open an issue or contribute a pull request.
+**You can fork this template and publish your own resume**  
+For questions, open an issue or contribute with a pull request.
 
 ## Original Credits
 - Original design by [xriley](https://github.com/xriley) on [DevResume-Theme](https://github.com/xriley/DevResume-Theme)
