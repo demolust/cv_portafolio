@@ -29,7 +29,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 ## How Is It Constructed?
 
 - **HTML (`index.html`):** The main template contains placeholder elements with unique IDs. It links to styles and scripts, but does not contain hard-coded personal data.
-- **CSS (`assets/css/output.css`):** Provides all visual styling, ensuring your resume looks modern and professional.
+- **CSS (`assets/css/resume.css`):** Provides all visual styling, ensuring your resume looks modern and professional.
 - **JavaScript (`assets/js/data.js` + `assets/js/render.js`):**  
   - `data.js` contains all resume data as JavaScript variables and arrays.
   - `render.js` contains all the Javascript code that will be executed and will populate it the ` index.html` file with necessary HTML tags
@@ -60,7 +60,7 @@ A customizable, dynamic resume website built with HTML, CSS, and JavaScript. Eas
 
 - For multiple people or resumes, create different versions of `data.js` and swap as needed.
 - To extend the resume, add new fields and update the JavaScript/template as required.
-- All styling can be adjusted via `assets/css/output.css`.
+- All styling can be adjusted via `assets/css/resume.css`.
 
 ---
 
