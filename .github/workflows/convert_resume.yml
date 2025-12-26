@@ -23,11 +23,11 @@ jobs:
       - name: Convert yaml to json file (js extension) and store in the assets/data path
         run: |
           mkdir -p assets/data
-          yq -p yaml -o json resume.yaml > assets/data/data.js
+          yq -p yaml -o json resume.yaml > assets/js/data.js
 
       - name: Modify the json to be a js file, using sed (workaround)
         run: |
-          sed -i '1s/^{/const data = {/g' assets/data/data.js
+          sed -i '1s/^{/const data = {/g' assets/js/data.js
 
       - name: Configure git
         run: |
@@ -36,7 +36,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add assets/data/data.js
+          git add assets/js/data.js
           git commit -m "ci: Convert resume from yaml to a js file" || echo "No changes to commit"
           git push origin HEAD:${GITHUB_REF#refs/heads/}
         env:
