@@ -25,6 +25,7 @@ const data = {
           "position": "Senior System Automation Engineer (Linux)",
           "company": "Oracle",
           "years": "May 2022 - Present",
+          "location": "Remote, México",
           "position_summary": "Led the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality.\nI owned the end-to-end engineering lifecycle, from architecting scalable IaC deployments to designing multi-platform validation frameworks.\nMy role focused on eliminating manual bottlenecks in hybrid environments and ensuring high-availability for kernel-space and user-space testing targets through robust CI/CD and custom tooling.",
           "key_acomplishments": [
             "Developed a complex Python-based framework for SmartNIC host provisioning, which reduced the end-to-end infrastructure provisioning & QA cycle time by 80%, decreasing the turnaround from 10 days to just 1-2 days",
@@ -45,6 +46,7 @@ const data = {
           "position": "Systems Testing Engineer",
           "company": "Lenovo",
           "years": "August 2019 - February 2022",
+          "location": "Nuevo León, México",
           "position_summary": "Engineered automation solutions to solve complex systems administration and infrastructure provisioning for high-volume manufacturing environments.\nI specialized in scaling production line efficiency across diverse hardware portfolios including workstations, laptops, and tablets by replacing manual workflows with robust system protocols.\nMy work focused on bridging the gap between hardware testing requirements and reliable, automated Linux/Windows host management.",
           "key_acomplishments": [
             "Designed and developed Python-based Hipot test suite, reducing the test cycle time by 20%",
@@ -59,6 +61,7 @@ const data = {
           "position": "QA Automation & Test Engineering Intern",
           "company": "Kärcher",
           "years": "January 2019 - July 2019",
+          "location": "Nuevo León, México",
           "position_summary": "Supported the QA lifecycle of New Product Introduction (NPI) by automating hardware-software interaction environments to simulate product functionality during this phase.\nI served as a bridge between design and manufacturing, utilizing a blend of automated test engineering and predictive analysis to identify failure points early.\nMy role was centered on ensuring uncompromising product reliability through rigorous data-driven validation and cross-functional quality reporting.",
           "key_acomplishments": [
             "Designed and implemented a LabVIEW-based automated test suite to simulate real-world product functionality for an NPI product",
