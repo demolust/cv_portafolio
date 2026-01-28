@@ -56,7 +56,7 @@ const data = {
           ]
         },
         {
-          "position": "QA Testing Intern",
+          "position": "QA Automation & Test Engineering Intern",
           "company": "Kärcher",
           "years": "January 2019 - July 2019",
           "position_summary": "Supported the QA lifecycle of New Product Introduction (NPI) by automating hardware-software interaction environments to simulate product functionality during this phase.\nI served as a bridge between design and manufacturing, utilizing a blend of automated test engineering and predictive analysis to identify failure points early.\nMy role was centered on ensuring uncompromising product reliability through rigorous data-driven validation and cross-functional quality reporting.",
