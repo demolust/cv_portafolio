@@ -89,27 +89,37 @@ const data = {
   ],
   "sidebarSkills": [
     {
-      "subheader": "Technical",
+      "subheader": "Technical Stack",
       "items": [
-        "Python",
-        "Linux",
-        "Bash",
+        "Languages: Python, Bash, PowerShell, SQL, Lua",
+        "Linux & Systems: Kernel/User-space, FIPS, SmartNICs, RHEL/Fedora, Windows",
+        "Infrastructure & DevOps: Ansible, Terraform, Podman, CI/CD, PXE, Github-Actions, GitLab-CI, Git",
+        "Tools & Frameworks: Pytest, Playwright, OCI SDK, LabVIEW, Git, Nginx, REST APIs",
+        "Databases: MySQL, MariaDB, PostgreSQL"
+      ]
+    },
+    {
+      "subheader": "Areas of Expertise",
+      "items": [
         "Automation",
-        "QA Testing",
-        "Sys Admin",
-        "DevOps",
-        "CI/CD (GitHub/GitLab)",
-        "IaC (Ansible/Terraform)"
+        "Site Reliability",
+        "Automated Provisioning",
+        "Infrastructure as Code (IaC)",
+        "CI/CD Engineering",
+        "DevSecOps",
+        "Tooling Automation",
+        "Test Engineering",
+        "Framework Architecture"
       ]
     },
     {
       "subheader": "Professional",
       "items": [
-        "Analytical Interpretation",
-        "Problem-Solving",
-        "Proactive",
-        "Committed",
-        "Disciplined"
+        "Technical Root Cause Analysis (RCA)",
+        "Systems Thinking",
+        "Self-Directed Research",
+        "Agile & Collaborative Execution",
+        "Cross-Functional Communication"
       ]
     }
   ],
