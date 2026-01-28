@@ -25,7 +25,7 @@ sections:
         company: "Oracle"
         years: "May 2022 - Present"
         position_summary: |-
-          Spearheaded the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality. 
+          Led the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality. 
           I owned the end-to-end engineering lifecycle—from architecting scalable IaC deployments to designing multi-platform validation frameworks. 
           My role focused on eliminating manual bottlenecks in hybrid environments and ensuring high-availability for kernel-space and user-space testing targets through robust CI/CD and custom tooling.
         key_acomplishments:
