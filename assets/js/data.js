@@ -25,7 +25,7 @@ const data = {
           "position": "Senior System Automation Engineer (Linux)",
           "company": "Oracle",
           "years": "May 2022 - Present",
-          "position_summary": "Led the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality. \nI owned the end-to-end engineering lifecycle—from architecting scalable IaC deployments to designing multi-platform validation frameworks. \nMy role focused on eliminating manual bottlenecks in hybrid environments and ensuring high-availability for kernel-space and user-space testing targets through robust CI/CD and custom tooling.",
+          "position_summary": "Led the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality. \nI owned the end-to-end engineering lifecycle, from architecting scalable IaC deployments to designing multi-platform validation frameworks. \nMy role focused on eliminating manual bottlenecks in hybrid environments and ensuring high-availability for kernel-space and user-space testing targets through robust CI/CD and custom tooling.",
           "key_acomplishments": [
             "Developed a complex Python-based framework for SmartNIC host provisioning, which reduced the end-to-end infrastructure provisioning & QA cycle time by 80%, decreasing the turnaround from 10 days to just 1–2 days",
             "Architected and implemented an IaC solution using Ansible and Terraform for the automated configuration, maintenance & security of SmartNICs and its on-premises Linux hosts",
