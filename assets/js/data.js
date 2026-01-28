@@ -25,12 +25,12 @@ const data = {
           "position": "Senior System Automation Engineer (Linux)",
           "company": "Oracle",
           "years": "May 2022 - Present",
-          "position_summary": "Led the development of a comprehensive framework for automated infrastructure solutions to optimize the Oracle Linux lifecycle on SmartNICs\nLed the implementation of Infrastructure as Code (IaC) and CI/CD pipelines for automated framework validations, SmartNIC and host provisioning & management, ensuring reliable deployments across hybrid environments\nLed the creation of comprehensive test automation frameworks focused on high-complexity testing targets including SmartNIC, kernel-space testing (hugepages, FIPS), user-space testing and cross-platform OCI SDK validation (.NET, TypeScript, PowerShell)",
+          "position_summary": "Led the development of a comprehensive framework for automated infrastructure provisioning to optimize the Oracle Linux lifecycle on SmartNICs\nLed the implementation of Infrastructure as Code (IaC) and CI/CD pipelines for automated framework validations, SmartNIC and host provisioning & management, to ensure reliable deployments across hybrid environments\nLed the creation of comprehensive test automation frameworks focused on high-complexity testing targets including SmartNIC, kernel-space testing (hugepages, FIPS), user-space testing and cross-platform OCI SDK validation (.NET, TypeScript, PowerShell)",
           "key_acomplishments": [
             "Developed a complex Python-based framework for SmartNIC host provisioning, which reduced the end-to-end infrastructure provisioning & QA cycle time by 80%, decreasing the turnaround from 10 days to just 1–2 days",
-            "Architected and implemented an IaC solution using Ansible and Terraform for the automated provisioning, configuration, and maintenance of SmartNICs and its on-premises Linux hosts",
+            "Architected and implemented an IaC solution using Ansible and Terraform for the automated provisioning, configuration, maintenance & security of SmartNICs and its on-premises Linux hosts",
             "Implemented the Playwright framework for automated testing of Linux web-based packages (e.g., Cockpit), resulting in a 70% reduction in response test time",
-            "Engineered robust CI/CD pipelines to validate the SmartNIC framework and automate new deployments of Playwright framework for the latest versions of the user-space packages",
+            "Engineered robust CI/CD pipelines to validate the SmartNIC framework, automate new deployments of Playwright framework for the latest versions of the user-space packages, validation of the state of SmartNICs hosts",
             "Orchestrated automated validation for OCI SDKs across multiple environments including .NET, TypeScript, and PowerShell & user-space package reliability"
           ]
         },
@@ -38,7 +38,7 @@ const data = {
           "position": "Systems Testing Engineer",
           "company": "Lenovo",
           "years": "August 2019 - February 2022",
-          "position_summary": "Designed and implemented automated systems for the administration of Windows and Linux hosts and the provisioning of on-premises infrastructure. Focused on scaling manufacturing environments through network automation and robust system setup protocols\nProvided technical support on manufacturing production lines and manufacturing testing environments for all product types from Desktops, Workstations, Laptops & Tablets",
+          "position_summary": "Designed and implemented automated tools to solve complex systems administration of Windows and Linux hosts and infrastructure challenges such as the provisioning of on-premises infrastructure. Focused on scaling manufacturing environments through automation and robust system setup protocols\nProvided technical support on manufacturing production lines and manufacturing testing environments for all product types from Desktops, Workstations, Laptops & Tablets for high-volume hardware production",
           "key_acomplishments": [
             "Designed and developed Python-based Hipot test suite, reducing the test cycle time by 20%",
             "Developed a suite of Python and Shell scripts to automate system configurations, peripheral manipulation, software installation",
