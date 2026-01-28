@@ -38,7 +38,7 @@ const data = {
           "position": "Systems Testing Engineer",
           "company": "Lenovo",
           "years": "August 2019 - February 2022",
-          "position_summary": "Designed and implemented automated tools to solve complex systems administration of Windows and Linux hosts and infrastructure challenges such as the provisioning of on-premises infrastructure. Focused on scaling manufacturing environments through automation and robust system setup protocols\nProvided technical support on manufacturing production lines and manufacturing testing environments for all product types from Desktops, Workstations, Laptops & Tablets for high-volume hardware production",
+          "position_summary": "Designed and implemented automated tools to solve complex systems administration of Windows and Linux hosts and infrastructure challenges such as the provisioning of on-premises infrastructure. Focused on scaling manufacturing environments through automation and robust system setup protocols\nProvided technical support on manufacturing production lines and manufacturing testing environments for all product types from Desktops, Workstations, Laptops & Tablets under a high-volume hardware production environment",
           "key_acomplishments": [
             "Designed and developed Python-based Hipot test suite, reducing the test cycle time by 20%",
             "Developed a suite of Python and Shell scripts to automate system configurations, peripheral manipulation, software installation",
