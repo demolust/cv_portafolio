@@ -93,7 +93,7 @@ const data = {
       "items": [
         "Languages: Python, Bash, PowerShell, SQL, Lua",
         "Linux & Systems: Kernel/User-space, FIPS, SmartNICs, RHEL/Fedora, Windows",
-        "Infrastructure & DevOps: Ansible, Terraform, Podman, CI/CD, PXE, Github-Actions, GitLab-CI, Git",
+        "Infrastructure & DevOps: Ansible, Terraform, Podman, CI/CD, PXE, Github-Actions, GitLab-CI",
         "Tools & Frameworks: Pytest, Playwright, OCI SDK, LabVIEW, Git, Nginx, REST APIs",
         "Databases: MySQL, MariaDB, PostgreSQL"
       ]
