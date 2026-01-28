@@ -45,7 +45,7 @@ sections:
         years: "August 2019 - February 2022"
         position_summary: |-
           Engineered automation solutions to solve complex systems administration and infrastructure provisioning for high-volume manufacturing environments. 
-          I specialized in scaling production line efficiency across diverse hardware portfolios—including workstations, laptops, and tablets—by replacing manual workflows with robust system protocols. 
+          I specialized in scaling production line efficiency across diverse hardware portfolios including workstations, laptops, and tablets by replacing manual workflows with robust system protocols. 
           My work focused on bridging the gap between hardware testing requirements and reliable, automated Linux/Windows host management.
         key_acomplishments:
           - "Designed and developed Python-based Hipot test suite, reducing the test cycle time by 20%"
