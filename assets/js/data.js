@@ -25,10 +25,17 @@ const data = {
           "position": "Senior System Automation Engineer (Linux)",
           "company": "Oracle",
           "years": "May 2022 - Present",
-          "position_summary": "Led the development of a comprehensive framework for automated infrastructure provisioning to optimize the Oracle Linux lifecycle on SmartNICs\nLed the implementation of Infrastructure as Code (IaC) and CI/CD pipelines for automated framework validations, SmartNIC and host provisioning & management, to ensure reliable deployments across hybrid environments\nLed the creation of comprehensive test automation frameworks focused on high-complexity testing targets including SmartNIC, kernel-space testing (hugepages, FIPS), user-space testing and cross-platform OCI SDK validation (.NET, TypeScript, PowerShell)",
+          "position_summary": "Spearheaded the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality. \nI owned the end-to-end engineering lifecycle—from architecting scalable IaC deployments to designing multi-platform validation frameworks. \nMy role focused on eliminating manual bottlenecks in hybrid environments and ensuring high-availability for kernel-space and user-space testing targets through robust CI/CD and custom tooling.",
           "key_acomplishments": [
             "Developed a complex Python-based framework for SmartNIC host provisioning, which reduced the end-to-end infrastructure provisioning & QA cycle time by 80%, decreasing the turnaround from 10 days to just 1–2 days",
-            "Architected and implemented an IaC solution using Ansible and Terraform for the automated provisioning, configuration, maintenance & security of SmartNICs and its on-premises Linux hosts",
+            "Architected and implemented an IaC solution using Ansible and Terraform for the automated configuration, maintenance & security of SmartNICs and its on-premises Linux hosts",
+            "Implemented the Playwright framework for automated testing of Linux web-based packages (e.g., Cockpit), resulting in a 70% reduction in response test time",
+            "Engineered robust CI/CD pipelines to validate the SmartNIC framework, automate new deployments of Playwright framework for the latest versions of the user-space packages, validation of the state of SmartNICs hosts",
+            "Orchestrated automated validation for OCI SDKs across multiple environments including .NET, TypeScript, and PowerShell & user-space package reliability"
+          ],
+          "key_acomplishments": [
+            "Developed a complex Python-based framework for SmartNIC host provisioning, which reduced the end-to-end infrastructure provisioning & QA cycle time by 80%, decreasing the turnaround from 10 days to just 1–2 days",
+            "Architected and implemented an IaC solution using Ansible and Terraform for the automated configuration, maintenance & security of SmartNICs and its on-premises Linux hosts",
             "Implemented the Playwright framework for automated testing of Linux web-based packages (e.g., Cockpit), resulting in a 70% reduction in response test time",
             "Engineered robust CI/CD pipelines to validate the SmartNIC framework, automate new deployments of Playwright framework for the latest versions of the user-space packages, validation of the state of SmartNICs hosts",
             "Orchestrated automated validation for OCI SDKs across multiple environments including .NET, TypeScript, and PowerShell & user-space package reliability"
@@ -38,7 +45,7 @@ const data = {
           "position": "Systems Testing Engineer",
           "company": "Lenovo",
           "years": "August 2019 - February 2022",
-          "position_summary": "Designed and implemented automated tools to solve complex systems administration of Windows and Linux hosts and infrastructure challenges such as the provisioning of on-premises infrastructure. Focused on scaling manufacturing environments through automation and robust system setup protocols\nProvided technical support on manufacturing production lines and manufacturing testing environments for all product types from Desktops, Workstations, Laptops & Tablets under a high-volume hardware production environment",
+          "position_summary": "Engineered automation solutions to solve complex systems administration and infrastructure provisioning for high-volume manufacturing environments. \nI specialized in scaling production line efficiency across diverse hardware portfolios—including workstations, laptops, and tablets—by replacing manual workflows with robust system protocols. \nMy work focused on bridging the gap between hardware testing requirements and reliable, automated Linux/Windows host management.",
           "key_acomplishments": [
             "Designed and developed Python-based Hipot test suite, reducing the test cycle time by 20%",
             "Developed a suite of Python and Shell scripts to automate system configurations, peripheral manipulation, software installation",
@@ -52,9 +59,9 @@ const data = {
           "position": "QA Testing Intern",
           "company": "Kärcher",
           "years": "January 2019 - July 2019",
-          "position_summary": "Supported the QA lifecycle by automating hardware-software interaction environments to simulate product functionality during the NPI phase\nFocused on ensuring product reliability through manual & automated functional testing and data-driven quality reporting",
+          "position_summary": "Supported the QA lifecycle of New Product Introduction (NPI) by automating hardware-software interaction environments to simulate product functionality during this phase\nI served as a bridge between design and manufacturing, utilizing a blend of automated test engineering and predictive analysis to identify failure points early. \nMy role was centered on ensuring uncompromising product reliability through rigorous data-driven validation and cross-functional quality reporting.",
           "key_acomplishments": [
-            "Designed and implemented a LabVIEW-based automated test suite to simulate real-world product functionality for the NPI product",
+            "Designed and implemented a LabVIEW-based automated test suite to simulate real-world product functionality for an NPI product",
             "Conducted CAE analysis on CAD designs to identify potential flaws, ensuring high-quality standards before manufacturing deployment",
             "Performed routine preventive and corrective maintenance, calibration, troubleshooting, and setup for testing equipment, ensuring that all systems were functioning optimally",
             "Performed both manual and automated QA testing, collecting data to generate validation reports for Design and QA teams"
