@@ -3,9 +3,10 @@ personalInfo:
   jobTitle: "Senior System Automation Engineer (Linux)"
   profileImage: "assets/images/resume-profile.png"
   summary: |-
-    Results-driven System Automation Engineer with 6+ years of experience driving growth through innovative solutions that use Python-based automation tools, Infrastructure as Code (IaC) via Ansible/Terraform, CI/CD pipelines, Shell-based tools
+    Results-driven System Automation Engineer with 6+ years of experience driving growth through innovative solutions developing system-level tools and automated solutions, that typically include Python-based automation tools, Infrastructure as Code (IaC) via Ansible/Terraform, CI/CD pipelines, Shell-based tools
     Proven track record in designing, developing, and maintaining Python-based automation frameworks for complex systems
-    Migrating legacy workflows to Infrastructure as Code (IaC) using Ansible and Terraform. Expert in architecting CI/CD pipelines for validation, building, testing, and deploying code
+    Migrating legacy workflows to Infrastructure as Code (IaC) using Ansible and Terraform
+    Expert in architecting CI/CD pipelines for validating, building, testing, and deploying code
     Expert in designing test automation frameworks that help reduced QA cycles by up to 80% as proven on Oracle Linux on SmartNIC systems
     Proficient in Linux System Administration, IaC, Python, Bash, SQL, with a focus on building CLI/TUI applications and internal infrastructure platforms
   email: "***REMOVED***"
