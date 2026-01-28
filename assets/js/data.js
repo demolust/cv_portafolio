@@ -3,7 +3,7 @@ const data = {
     "fullName": "Jorge Adrian Castro Chapa",
     "jobTitle": "Senior System Automation Engineer (Linux)",
     "profileImage": "assets/images/resume-profile.png",
-    "summary": "Results-driven System Automation Engineer with over 6 years of experience architecting high-performance infrastructure and automated toolsets.\nProven expertise in developing Python-based automation frameworks for complex systems and migrating legacy workflows to Infrastructure as Code (IaC) using Ansible and Terraform.\nA specialist in CI/CD orchestration for validating, building, testing, and deploying code and expert in automation frameworks, that help have reduce QA cycles by up to 80%, specifically within Oracle Linux on the SmartNIC environments.\nProficient in building CLI/TUI applications and robust internal platforms that bridge the gap between development and operations.",
+    "summary": "Results-driven System Automation Engineer with over 6 years of experience architecting high-performance infrastructure and automated toolsets.\nProven expertise in developing Python-based automation frameworks for complex systems and migrating legacy workflows to Infrastructure as Code (IaC) using Ansible and Terraform. A specialist in CI/CD orchestration for validating, building, testing, and deploying code and expert in automation frameworks, that help have reduce QA cycles by up to 80%, specifically within Oracle Linux on the SmartNIC environments.\nProficient in building CLI/TUI applications and robust internal platforms that bridge the gap between development and operations.",
     "email": "***REMOVED***",
     "phone": "***REMOVED***",
     "location": "Nuevo León",
