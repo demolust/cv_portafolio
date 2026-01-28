@@ -92,6 +92,7 @@ function renderSection(section) {
           <div class="item mb-3">
             <div class="item-heading row align-items-center mb-2">
               <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">${work.position}</h4>
+              <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">${work.location}</div>
               <p class="item-title col-16 col-md-6 col-lg-8 mb-2 mb-md-0">${work.company}</p>
               <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">${work.years}</div>
             </div>

@@ -23,6 +23,7 @@ sections:
       - position: "Senior System Automation Engineer (Linux)"
         company: "Oracle"
         years: "May 2022 - Present"
+        location: "Remote, México"
         position_summary: |-
           Led the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality.
           I owned the end-to-end engineering lifecycle, from architecting scalable IaC deployments to designing multi-platform validation frameworks.
@@ -42,6 +43,7 @@ sections:
       - position: "Systems Testing Engineer"
         company: "Lenovo"
         years: "August 2019 - February 2022"
+        location: "Nuevo León, México"
         position_summary: |-
           Engineered automation solutions to solve complex systems administration and infrastructure provisioning for high-volume manufacturing environments.
           I specialized in scaling production line efficiency across diverse hardware portfolios including workstations, laptops, and tablets by replacing manual workflows with robust system protocols.
@@ -56,6 +58,7 @@ sections:
       - position: "QA Automation & Test Engineering Intern"
         company: "Kärcher"
         years: "January 2019 - July 2019"
+        location: "Nuevo León, México"
         position_summary: |-
           Supported the QA lifecycle of New Product Introduction (NPI) by automating hardware-software interaction environments to simulate product functionality during this phase.
           I served as a bridge between design and manufacturing, utilizing a blend of automated test engineering and predictive analysis to identify failure points early.
