@@ -53,7 +53,7 @@ sections:
           - "Designed and implemented logic for an accessory-tracking system that utilized SQL DBs to automate manufacturing quality checks"
           - "Automated PXE OS provisioning for manufacturing host machines, ensuring high-speed, reliable, and repeatable installations"
           - "Managed and automated configurations for network switches and Linux/Windows host administration"
-      - position: "QA Testing Intern"
+      - position: "QA Automation & Test Engineering Intern"
         company: "Kärcher"
         years: "January 2019 - July 2019"
         position_summary: |-
