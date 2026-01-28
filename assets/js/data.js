@@ -113,7 +113,7 @@ const data = {
       ]
     },
     {
-      "subheader": "Professional",
+      "subheader": "Professional Attributes",
       "items": [
         "Technical Root Cause Analysis (RCA)",
         "Systems Thinking",
