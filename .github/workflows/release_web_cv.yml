@@ -1,0 +1,91 @@
+name: Release web CV
+
+on:
+  workflow_run:
+    workflows: ["Create release"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+jobs:
+  release-cv-s1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Get latest tag
+        id: vars
+        run: echo "TAG=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
+
+      - name: Set name as env
+        run: echo "NAME=$(grep fullName resume.yaml | awk -F ':' '{print $2}' | tr -d '"' | sed 's/ //')" >> $GITHUB_ENV
+
+      - name: Install exiftool, tesseract-ocr, ghostscript
+        run: sudo apt update && sudo apt install -y libimage-exiftool-perl tesseract-ocr ghostscript
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright img2pdf ocrmypdf
+
+      - name: Install Playwright browsers
+        run: playwright install --with-deps
+
+      - name: Check if profileImage exists
+        id: check_img
+        run: |
+          if grep -qE '"profileImage":\s*".+"' assets/js/data.js; then
+            echo "IMG_EXISTS=true" >> $GITHUB_OUTPUT
+          else
+            echo "IMG_EXISTS=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate Screenshots
+        run: |
+          python scripts/screenshot.py
+          mv screenshot.png standard.png
+
+          if [ "${{ steps.check_img.outputs.IMG_EXISTS }}" == "true" ]; then
+            sed -i -E '/"profileImage":[[:space:]]*".+"/d' assets/js/data.js
+            python scripts/screenshot.py
+            mv screenshot.png no_image.png
+          fi
+
+      - name: Process psf's
+        run: |
+          TAG="${{ steps.vars.outputs.TAG }}"
+          process_file() {
+            local input=$1
+            local output=$2
+            img2pdf "$input" --output temp.pdf
+            ocrmypdf --force-ocr --title "Resume - $NAME" --author "$NAME" temp.pdf "$output"
+            exiftool -Creator="$NAME" -Producer="$NAME" -Title="Resume - $NAME" -Author="$NAME" "$output"
+            rm -f temp.pdf
+          }
+
+          process_file "standard.png" "CV-S1-$TAG.pdf"
+
+          if [ "${{ steps.check_img.outputs.IMG_EXISTS }}" == "true" ]; then
+            process_file "no_image.png" "CV-S1-NoPhoto-$TAG.pdf"
+          fi
+
+      - name: Upload pdf's to Release
+        run: |
+          gh release upload ${{ steps.vars.outputs.TAG }} CV-S1-${{ steps.vars.outputs.TAG }}.pdf --clobber
+
+          if [ "${{ steps.check_img.outputs.IMG_EXISTS }}" == "true" ]; then
+            gh release upload ${{ steps.vars.outputs.TAG }} CV-S1-NoPhoto-${{ steps.vars.outputs.TAG }}.pdf --clobber
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

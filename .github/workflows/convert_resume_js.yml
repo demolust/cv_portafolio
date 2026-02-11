@@ -1,4 +1,4 @@
-name: Convert resume from yaml to a js file (workaround)
+name: Generate assets.js
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "resume.yaml"
 
 jobs:
-  convert_and_push:
+  convert-to-js-and-push:
     runs-on: ubuntu-latest
     permissions:
       contents: write
