@@ -1,5 +1,5 @@
 ---
-title: Jorge Adrian Castro Chapa 
+title: Jorge Adrian Castro Chapa
 ---
 ###### [ [Github](https://www.github.com/demolust) ] - [ [LinkedIn](https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167) ] - [ [***REMOVED***](mailto:***REMOVED***) ] - [ [***REMOVED***](tel:***REMOVED***) ] - [ Nuevo León ]
 
