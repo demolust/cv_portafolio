@@ -29,6 +29,10 @@ def render_header(data):
         phone = p.get('phone')
         links.append(f"[ [{phone}](tel:{phone}) ]")
 
+    if 'location' in p:
+        location = p.get('location')
+        links.append(f"[ {location} ]")
+
     if links:
         md += f"###### {' - '.join(links)}\n\n"
 
