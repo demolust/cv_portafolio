@@ -134,8 +134,8 @@ const data = {
       "title": "Languages",
       "type": "languages",
       "items": [
-        "English (Professional)",
         "Spanish (Native)",
+        "English (Professional)",
         "German (Elementary)"
       ]
     }
