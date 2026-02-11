@@ -110,6 +110,7 @@ function renderSection(section) {
             <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">${edu.title}</h4>
             <div style="font-size:15px" class="resume-degree-org">${edu.college}</div>
             <div style="font-size:15px" class="resume-degree-time">${edu.dates}</div>
+            <div style="font-size:15px" class="resume-degree-time">${edu.location}</div>
           </div>
         `).join('');
   } else if (section.type === "certification") {
