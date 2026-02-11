@@ -45,7 +45,7 @@ jobs:
       - name: Run render commands
         run: |
           sed -i 's/<body[^>]*>/&<div class="pre-wrapper">/g' "resume.html"
-          sed -i 's/<h3/<\/div><div class="entry"><h3/g' "resume.html"
+          sed -i 's/<h3/<\/div><div class="job-entry"><h3/g' "resume.html"
           sed -i 's/<\/body>/<\/div><\/body>/g' "resume.html"
 
       - name: Convert to pdf
