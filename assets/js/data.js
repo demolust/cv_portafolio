@@ -80,12 +80,14 @@ const data = {
         {
           "title": "Mechatronics Engineer",
           "college": "Universidad Autónoma de Nuevo León",
-          "dates": "2014 - 2019"
+          "dates": "2014 - 2019",
+          "location": "Nuevo León, México"
         },
         {
           "title": "Specialized Technician in Electricity and Electronics",
           "college": "Universidad Autónoma de Nuevo León",
-          "dates": "2015 - 2017"
+          "dates": "2015 - 2017",
+          "location": "Nuevo León, México"
         }
       ]
     }
