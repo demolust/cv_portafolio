@@ -1,7 +1,7 @@
 ---
-title: Jorge Adrian Castro Chapa
+title: Jorge Adrian Castro Chapa 
 ---
-###### [ [Github](https://www.github.com/demolust) ] - [ [LinkedIn](https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167) ] - [ [***REMOVED***](mailto:***REMOVED***) ] - [ [***REMOVED***](tel:***REMOVED***) ]
+###### [ [Github](https://www.github.com/demolust) ] - [ [LinkedIn](https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167) ] - [ [***REMOVED***](mailto:***REMOVED***) ] - [ [***REMOVED***](tel:***REMOVED***) ] - [ Nuevo León ]
 
 Results-driven System Automation Engineer with over 6 years of experience architecting high-performance infrastructure and automated toolsets within complex systems. I excel at transforming manual, multi-day processes into streamlined automated workflows.
 Proven expertise in developing Python-based automation frameworks for complex systems and migrating legacy workflows to Infrastructure as Code (IaC) using Ansible and Terraform. A specialist in CI/CD orchestration & automated deployment workflows and expert in automation frameworks, that help reduce QA cycles by up to 80%, specifically within Oracle Linux on the SmartNIC environments.
