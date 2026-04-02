@@ -1,11 +1,12 @@
 personalInfo:
   fullName: "Jorge Adrian Castro Chapa"
-  jobTitle: "Senior System Automation Engineer (Linux)"
+  jobTitle: "Senior Infrastructure & System Engineer (OCI/Linux)"
   profileImage: "assets/images/resume-profile.png"
   summary: |-
-    Results-driven System Automation Engineer with over 6 years of experience architecting high-performance infrastructure and automated toolsets within complex systems. I excel at transforming manual, multi-day processes into streamlined automated workflows.
-    Proven expertise in developing Python-based automation frameworks for complex systems and migrating legacy workflows to Infrastructure as Code (IaC) using Ansible and Terraform. A specialist in CI/CD orchestration & automated deployment workflows and expert in automation frameworks, that help reduce QA cycles by up to 80%, specifically within Oracle Linux on the SmartNIC environments.
-    Proficient in building CLI/TUI applications and robust internal platforms that bridge the gap between development and operations.
+    Results-driven Infrastructure & System Engineer with 6+ years of experience in low-level system automation (OS/Kernel/Networking) and Infrastructure as Code (IaC).
+    Specialized in architecting Python-based orchestration frameworks for complex systems provisioning (SmartNICs & Bare Metal) and migrating legacy workflows using Ansible and Terraform.
+    Expert in building high-performance automated toolsets that transform manual, multi-day deployment workflows into automated CI/CD pipelines, reducing operational cycles by up to 80%.
+    Proficient in developing CLI/TUI applications and robust internal platforms that bridge the gap between development and operations.
   email: "***REMOVED***"
   phone: "***REMOVED***"
   location: "Nuevo León"
@@ -20,54 +21,46 @@ sections:
     title: "Experience"
     type: "work"
     items:
-      - position: "Senior System Automation Engineer (Linux)"
+      - position: "Senior Infrastructure & System Engineer (OCI/Linux)"
         company: "Oracle"
         years: "May 2022 - Present"
         location: "Remote, México"
         position_summary: |-
-          Led the automation strategy for Oracle Linux on SmartNIC systems, bridging the gap between hardware provisioning and software quality.
+          Leading the automation strategy for SmartNIC enablement on Oracle Linux, bridging the gap between hardware provisioning and cloud-scale OS reliability.
           I owned the end-to-end engineering lifecycle, from architecting scalable IaC deployments to designing multi-platform validation frameworks.
           My role focused on eliminating manual bottlenecks in hybrid environments and ensuring high-availability for kernel-space and user-space testing targets through robust CI/CD and custom tooling.
         key_acomplishments:
-          - "Developed a complex Python-based framework for SmartNIC host provisioning, which reduced the end-to-end infrastructure provisioning & QA cycle time by 80%, decreasing the turnaround from 10 days to just 1-2 days"
-          - "Architected and implemented an IaC solution using Ansible and Terraform for the automated configuration, maintenance & security of SmartNICs and its on-premises Linux hosts"
-          - "Implemented the Playwright framework for automated testing of Linux web-based packages (e.g., Cockpit), resulting in a 70% reduction in response test time"
-          - "Engineered robust CI/CD pipelines to validate the SmartNIC framework, automate new deployments of Playwright framework for the latest versions of the user-space packages, validation of the state of SmartNICs hosts"
-          - "Orchestrated automated validation for OCI SDKs across multiple environments including .NET, TypeScript, and PowerShell & user-space package reliability"
-        key_acomplishments:
-          - "Developed a complex Python-based framework for SmartNIC host provisioning, which reduced the end-to-end infrastructure provisioning & QA cycle time by 80%, decreasing the turnaround from 10 days to just 1-2 days"
-          - "Architected and implemented an IaC solution using Ansible and Terraform for the automated configuration, maintenance & security of SmartNICs and its on-premises Linux hosts"
-          - "Implemented the Playwright framework for automated testing of Linux web-based packages (e.g., Cockpit), resulting in a 70% reduction in response test time"
-          - "Engineered robust CI/CD pipelines to validate the SmartNIC framework, automate new deployments of Playwright framework for the latest versions of the user-space packages, validation of the state of SmartNICs hosts"
-          - "Orchestrated automated validation for OCI SDKs across multiple environments including .NET, TypeScript, and PowerShell & user-space package reliability"
-      - position: "Systems Testing Engineer"
+          - "Infrastructure Orchestration: Architected and developed a Python-based framework for automated SmartNIC host provisioning, reducing the end-to-end deployment and validation cycle from 10 days to 24-48 hours (80% efficiency gain)"
+          - "Infrastructure as Code (IaC): Designed and implemented IaC solutions using Ansible and Terraform for automated configuration, security hardening, and maintenance of on-premises and cloud-based Linux fleets (SmartNICs & Hosts)"
+          - "Containerized CI/CD: Engineered CI/CD pipelines to automate the deployment of containerized Playwright frameworks onto OCI, streamlining the validation of Linux web packages (e.g., Cockpit) and reducing response times by 70%"
+          - "SDK Automation: Developed and maintained complex automated validation suites for OCI SDKs (.NET, TypeScript, PowerShell), ensuring high-availability and reliability for core cloud consumption tools"
+
+      - position: "Test, Systems & Infrastructure Engineer"
         company: "Lenovo"
         years: "August 2019 - February 2022"
         location: "Nuevo León, México"
         position_summary: |-
-          Engineered automation solutions to solve complex systems administration and infrastructure provisioning for high-volume manufacturing environments.
+          Engineered automation solutions for high-volume manufacturing environments, focusing on large-scale infrastructure provisioning and system reliability.
           I specialized in scaling production line efficiency across diverse hardware portfolios including workstations, laptops, and tablets by replacing manual workflows with robust system protocols.
           My work focused on bridging the gap between hardware testing requirements and reliable, automated Linux/Windows host management.
         key_acomplishments:
-          - "Designed and developed Python-based Hipot test suite, reducing the test cycle time by 20%"
-          - "Developed a suite of Python and Shell scripts to automate system configurations, peripheral manipulation, software installation"
-          - "Engineered a Python-based SFTP client/server system to enable secure, controlled data exchange within the internal network"
-          - "Designed and implemented logic for an accessory-tracking system that utilized SQL DBs to automate manufacturing quality checks"
-          - "Automated PXE OS provisioning for manufacturing host machines, ensuring high-speed, reliable, and repeatable installations"
-          - "Managed and automated configurations for network switches and Linux/Windows host administration"
-      - position: "QA Automation & Test Engineering Intern"
+          - "Mass Provisioning: Automated PXE-based OS provisioning for manufacturing fleets, ensuring high-speed, repeatable, and secure installations across diverse hardware portfolios"
+          - "Systems Automation: Designed and developed a Python-based Hipot automation suite, reducing the test cycle time by 20% through optimized system interaction"
+          - "Network & Systems Administration: Managed and automated configurations for network switches and hybrid Linux/Windows host administration using advanced Python and Shell scripting"
+          - "Data Systems Engineering: Developed a secure Python-based SFTP client/server system for critical manufacturing data exchange and implemented SQL-based tracking logic for accessory systems to automate manufacturing quality checks"
+
+      - position: "Test Engineering Intern (NPI)"
         company: "Kärcher"
         years: "January 2019 - July 2019"
         location: "Nuevo León, México"
         position_summary: |-
-          Supported the QA lifecycle of New Product Introduction (NPI) by automating hardware-software interaction environments to simulate product functionality during this phase.
-          I served as a bridge between design and manufacturing, utilizing a blend of automated test engineering and predictive analysis to identify failure points early.
+          Supported the product lifecycle by automated hardware-software interaction environments for New Product Introduction (NPI), serving as a technical bridge between Design and Manufacturing engineering teams.
           My role was centered on ensuring uncompromising product reliability through rigorous data-driven validation and cross-functional quality reporting.
         key_acomplishments:
-          - "Designed and implemented a LabVIEW-based automated test suite to simulate real-world product functionality for an NPI product"
-          - "Conducted CAE analysis on CAD designs to identify potential flaws, ensuring high-quality standards before manufacturing deployment"
-          - "Performed routine preventive and corrective maintenance, calibration, troubleshooting, and setup for testing equipment, ensuring that all systems were functioning optimally"
-          - "Performed both manual and automated QA testing, collecting data to generate validation reports for Design and QA teams"
+          - "Hardware Automation: Designed and implemented a LabVIEW-based automated test suite to simulate real-world product functionality"
+          - "System Reliability: Conducted CAE analysis on CAD designs to identify critical failure points, ensuring high-quality standards prior to large-scale manufacturing deployment"
+          - "Infrastructure Maintenance: Managed preventive and corrective maintenance, calibration, and troubleshooting for high-precision testing equipment to ensure 100% system uptime"
+          - "Data-Driven Validation: Executed hybrid manual and automated QA protocols, generating technical validation reports to drive cross-functional quality standards"
 
   - id: "education"
     title: "Education"
@@ -97,10 +90,9 @@ sidebarSkills:
   - subheader: "Technical Stack"
     items:
       - "Languages: Python, Bash, PowerShell, SQL, Lua"
-      - "Linux & Systems: Kernel/User-space, FIPS, SmartNICs, RHEL/Fedora, Windows"
-      - "Infrastructure & DevOps: Ansible, Terraform, Podman, CI/CD, PXE, Github-Actions, GitLab-CI"
-      - "Tools & Frameworks: Pytest, Playwright, OCI SDK, LabVIEW, Git, Nginx, REST APIs"
-      - "Databases: MySQL, MariaDB, PostgreSQL"
+      - "Infrastructure & DevOps: Ansible, Terraform, OCI (Oracle Cloud Infrastructure), CI/CD (GitHub Actions/GitLab CI), PXE Provisioning, IaC"
+      - "Systems & Networking: Linux Kernel (RHEL/Fedora/Oracle Linux), SmartNICs (Offloading, RDMA, RoCE), Bare Metal, Podman/Docker, DevSecOps, Windows"
+      - "Tools: Pytest, OCI SDK, REST APIs, Nginx, Git, MySQL/PostgreSQL, LabVIEW"
   - subheader: "Professional Attributes"
     items:
       - "Technical Root Cause Analysis (RCA)"
