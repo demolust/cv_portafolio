@@ -1,7 +1,7 @@
 ---
 title: Jorge Adrian Castro Chapa
 ---
-###### [ [Github](https://www.github.com/demolust) ] - [ [LinkedIn](https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167) ] - [ [***REMOVED***](mailto:***REMOVED***) ] - [ [+52 8121766851](tel:+52 8121766851) ] - [ Nuevo León ]
+###### [ [Github](https://www.github.com/demolust) ] - [ [LinkedIn](https://linkedin.com/in/jorge-adrian-castro-chapa-28a315167) ] - [ [jcastro.careers@mailbox.org](mailto:jcastro.careers@mailbox.org) ] - [ [+52 8121766851](tel:+52 8121766851) ] - [ Nuevo León ]
 
 Results-driven Infrastructure & System Engineer with 6+ years of experience in low-level system automation (OS/Kernel/Networking) and Infrastructure as Code (IaC).
 Specialized in architecting Python-based orchestration frameworks for complex systems provisioning (SmartNICs & Bare Metal) and migrating legacy workflows using Ansible and Terraform.
