@@ -4,7 +4,7 @@ const data = {
     "jobTitle": "Senior Infrastructure & System Engineer (OCI/Linux)",
     "profileImage": "assets/images/resume-profile.png",
     "summary": "Results-driven Infrastructure & System Engineer with 6+ years of experience in low-level system automation (OS/Kernel/Networking) and Infrastructure as Code (IaC).\nSpecialized in architecting Python-based orchestration frameworks for complex systems provisioning (SmartNICs & Bare Metal) and migrating legacy workflows using Ansible and Terraform.\nExpert in building high-performance automated toolsets that transform manual, multi-day deployment workflows into automated CI/CD pipelines, reducing operational cycles by up to 80%.\nProficient in developing CLI/TUI applications and robust internal platforms that bridge the gap between development and operations.",
-    "email": "***REMOVED***",
+    "email": "jcastro.careers@mailbox.org",
     "phone": "+52 8121766851",
     "location": "Nuevo León",
     "github": {
