@@ -35,7 +35,7 @@ const data = {
           ]
         },
         {
-          "position": "Test, Systems & Infrastructure Engineer",
+          "position": "Test & Systems Infrastructure Engineer",
           "company": "Lenovo",
           "years": "August 2019 - February 2022",
           "location": "Nuevo León, México",
