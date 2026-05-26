@@ -35,7 +35,7 @@ sections:
           - "Containerized CI/CD: Engineered CI/CD pipelines to automate the deployment of containerized Playwright frameworks onto OCI, streamlining the validation of Linux web packages (e.g., Cockpit) and reducing response times by 70%"
           - "SDK Automation: Developed and maintained complex automated validation suites for OCI SDKs (.NET, TypeScript, PowerShell), ensuring production-grade stability and cross-platform parity for core cloud consumption tools"
 
-      - position: "Test, Systems & Infrastructure Engineer"
+      - position: "Test & Systems Infrastructure Engineer"
         company: "Lenovo"
         years: "August 2019 - February 2022"
         location: "Nuevo León, México"
