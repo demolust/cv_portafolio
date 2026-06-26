@@ -3,7 +3,7 @@ const data = {
     "fullName": "Jorge Adrian Castro Chapa",
     "jobTitle": "Senior Infrastructure & System Engineer (OCI/Linux)",
     "profileImage": "assets/images/resume-profile.png",
-    "summary": "Results-driven Infrastructure & System Engineer with 6+ years of experience in low-level system automation (OS/Kernel/Networking) and Infrastructure as Code (IaC).\nSpecialized in architecting Python-based orchestration frameworks for complex systems provisioning (SmartNICs & Bare Metal) and migrating legacy workflows using Ansible and Terraform.\nExpert in building high-performance automated toolsets that transform manual, multi-day deployment workflows into automated CI/CD pipelines, reducing operational cycles by up to 80%.\nProficient in developing CLI/TUI applications and robust internal platforms that bridge the gap between development and operations.",
+    "summary": "Infrastructure & Systems Engineer with 6+ years of experience designing Linux infrastructure platforms, bare-metal provisioning systems, and Infrastructure as Code (IaC) automation.\nSpecialized in building Python-based orchestration systems for SmartNIC lifecycle management, GitOps-driven infrastructure, and OCI-based Linux environments.\nFocused on designing internal infrastructure platforms that automate provisioning, operating system lifecycle management, and large-scale Linux operations across distributed environments.",
     "email": "jcastro.careers@mailbox.org",
     "phone": "+52 8121766851",
     "location": "Nuevo León",
@@ -22,16 +22,16 @@ const data = {
       "type": "work",
       "items": [
         {
-          "position": "Senior Infrastructure & System Engineer (OCI/Linux)",
+          "position": "Senior Infrastructure & Systems Engineer (OCI/Linux)",
           "company": "Oracle",
           "years": "May 2022 - Present",
           "location": "Remote, México",
-          "position_summary": "Leading the automation strategy for SmartNIC Lifecycle Management on Oracle Linux, bridging the gap between hardware provisioning and cloud-scale OS reliability.\nI owned the end-to-end engineering lifecycle, from architecting scalable IaC deployments to designing multi-platform validation frameworks.\nMy role focused on eliminating manual bottlenecks in hybrid environments and ensuring high-availability for kernel-space and user-space testing targets through robust CI/CD and custom tooling.",
+          "position_summary": "Leading the design and implementation of infrastructure systems for SmartNIC lifecycle management on Oracle Linux, bridging hardware provisioning, Linux operating systems, kernel-level validation, and cloud-scale infrastructure reliability.\nResponsible for end-to-end ownership of SmartNIC infrastructure platforms, including fleet orchestration, IaC deployment systems, and multi-environment validation frameworks across distributed Linux and bare-metal infrastructure.\nFocused on eliminating manual infrastructure workflows and enabling scalable, automated execution pipelines for OS, kernel, and hardware-level systems.",
           "key_acomplishments": [
-            "Infrastructure Orchestration: Architected and developed a Python-based framework for automated SmartNIC host provisioning, reducing the end-to-end deployment and validation cycle from 10 days to 24-48 hours (80% efficiency gain)",
-            "Infrastructure as Code (IaC): Designed and implemented IaC solutions using Ansible and Terraform for automated configuration, security hardening, and maintenance of on-premises and cloud-based Linux fleets (SmartNICs & Hosts)",
-            "Containerized CI/CD: Engineered CI/CD pipelines to automate the deployment of containerized Playwright frameworks onto OCI, streamlining the validation of Linux web packages (e.g., Cockpit) and reducing response times by 70%",
-            "SDK Automation: Developed and maintained complex automated validation suites for OCI SDKs (.NET, TypeScript, PowerShell), ensuring production-grade stability and cross-platform parity for core cloud consumption tools"
+            "SmartNIC Infrastructure Platform: Architected and developed a Python-based SmartNIC lifecycle orchestration platform adopted across SmartNIC QA and infrastructure teams for automated provisioning and validation, reducing end-to-end deployment cycles from 10 days to 24–48 hours (~80% improvement) across distributed bare-metal infrastructure",
+            "Infrastructure as Code (IaC): Designed and implemented Terraform and Ansible-based infrastructure automation pipelines for provisioning and managing SmartNIC, host, and OCI environments, enabling reproducible Linux infrastructure deployments across on-prem and cloud systems",
+            "OCI Infrastructure Debug Platform: Built an OCI-based infrastructure bastion for SmartNIC and bare-metal environments, enabling centralized system-level debugging (tcpdump, kdump, kernel tracing, hardware diagnostics) across hosts, SmartNICs, BMC, and ILOM systems supporting infrastructure operations, debugging and production system reliability validation across distributed Linux environments",
+            "GitOps CI/CD Infrastructure: Engineered a self-hosted GitLab Runner platform using Podman-in-Podman containerized execution, orchestrating Ansible and Terraform workflows for GitOps-based infrastructure automation, integrating OCI Vault for secure secret management and runtime execution"
           ]
         },
         {
@@ -39,13 +39,13 @@ const data = {
           "company": "Lenovo",
           "years": "August 2019 - February 2022",
           "location": "Nuevo León, México",
-          "position_summary": "Engineered automation solutions for high-volume manufacturing environments, focusing on large-scale infrastructure provisioning and system reliability.\nI specialized in scaling production line efficiency across diverse hardware portfolios including workstations, laptops, and tablets by replacing manual workflows with robust system protocols.\nMy work focused on bridging the gap between hardware testing requirements and reliable, automated Linux/Windows host management.",
+          "position_summary": "Engineered infrastructure automation solutions for large-scale manufacturing environments, designing provisioning systems and automation platforms for Linux/Windows hosts, network infrastructure, and hardware validation workflows.\nFocused on replacing manual deployment and testing processes with scalable automation, improving system reliability and enabling repeatable provisioning across diverse hardware platforms, including workstations, laptops, and tablets.\nWorked at the intersection of infrastructure, operating systems, networking, and manufacturing systems, building internal tooling that supported high-volume production environments through automation and systems engineering.",
           "key_acomplishments": [
-            "Mass Provisioning: Engineered an automated PXE-based OS deployment pipeline for manufacturing fleets, replacing manual installations with a high-speed, repeatable infrastructure solution",
-            "Scalable Asset Management: Engineered a PowerShell-based automation framework for accessory validation, increasing production throughput by 80x and expanding capacity from 10 units per day to over 200 units per half-shift",
-            "Systems Automation: Designed and developed a custom Python-based Hipot automation suite, reducing production bottlenecks and optimizing system interaction for a 20% gain in test cycle efficiency",
-            "Network & Systems Orchestration: Managed and automated hybrid Linux/Windows host administration and network switch configurations using advanced Python and Shell scripting",
-            "Data Systems Engineering: Engineered a Python-based SFTP client with integrated request validation to secure data exchange between production assets and CentOS-based infrastructure for critical manufacturing data exchange and implemented SQL-based tracking logic for accessory systems to automate manufacturing quality checks"
+            "Automated Bare-Metal Mass Provisioning: Designed PXE-based OS provisioning infrastructure for large-scale hardware fleets, replacing manual installation processes with fully automated deployment pipelines for Linux and Windows environments",
+            "Hardware Validation & Infrastructure Management Automation: Developed Python and PowerShell automation systems for hardware & accessory validation workflows, increasing production throughput up to ~80x in manufacturing test environments",
+            "Systems Testing Automation: Designed and developed a custom Python-based Hipot automation suite, reducing production bottlenecks and optimizing system interaction for a 20% gain in test cycle efficiency",
+            "Infrastructure & Network Orchestration: Built and maintained hybrid Linux/Windows infrastructure automation systems, including network switch (L3) orchestration, host lifecycle management, and systems provisioning workflows",
+            "Infrastructure Tooling: Developed a custom Python-based SFTP service with request validation to secure critical manufacturing data exchange between Production teams & Infrastructure teams, and implemented SQL-based tracking logic for accessory systems to automate manufacturing quality checks"
           ]
         },
         {
@@ -55,10 +55,10 @@ const data = {
           "location": "Nuevo León, México",
           "position_summary": "Supported the product lifecycle by automated hardware-software interaction environments for New Product Introduction (NPI), serving as a technical bridge between Design and Manufacturing engineering teams.\nMy role was centered on ensuring uncompromising product reliability through rigorous data-driven validation and cross-functional quality reporting.",
           "key_acomplishments": [
-            "Hardware Automation: Designed and implemented a LabVIEW-based automated test suite to simulate real-world product functionality",
-            "System Reliability: Conducted CAE analysis on CAD designs to identify critical failure points, ensuring high-quality standards prior to large-scale manufacturing deployment",
-            "Infrastructure Maintenance: Managed preventive and corrective maintenance, calibration, and troubleshooting for high-precision testing equipment to ensure 100% system uptime",
-            "Data-Driven Validation: Executed hybrid manual and automated QA protocols, generating technical validation reports to drive cross-functional quality standards"
+            "Automated Hardware Test Infrastructure: Designed and implemented a LabVIEW-based automated test suite to simulate real-world product functionality in New Product Introduction environments",
+            "Product Design Validation: Performed CAE/FEA simulations on CAD designs to identify critical failure points and support manufacturing readiness",
+            "Systems Reliability (Manufacturing): Supported reliability, preventive & corrective maintenance,troubleshooting and calibration processes for high-precision testing infrastructure used in manufacturing validation pipelines",
+            "Platform Reliability Validation (Manufacturing): Executed automated and manual validation procedures to verify infrastructure reliability, documenting results to support continuous improvement"
           ]
         }
       ]
@@ -87,13 +87,15 @@ const data = {
     {
       "subheader": "Areas of Expertise",
       "items": [
+        "Linux Infrastructure",
         "Infrastructure as Code (IaC)",
+        "Bare-Metal Provisioning (PXE)",
+        "Systems Automation",
+        "Platform Engineering",
         "Site Reliability (SRE)",
-        "Automated Provisioning (PXE)",
         "CI/CD Orchestration",
         "DevSecOps & Hardening",
-        "Systemic Root Cause Analysis",
-        "Fleet Management"
+        "Systemic Root Cause Analysis (RCA)"
       ]
     },
     {
