@@ -9,7 +9,7 @@ Focused on designing internal infrastructure platforms that automate provisionin
 
 ## Experience
 ### Oracle
-##### Senior Systems Software Engineer, May 2022 - Present, Remote, México
+##### Senior Infrastructure & Systems Engineer (OCI/Linux), May 2022 - Present, Remote, México
 Leading the design and implementation of infrastructure systems for SmartNIC lifecycle management on Oracle Linux, bridging hardware provisioning, Linux operating systems, kernel-level validation, and cloud-scale infrastructure reliability.
 Responsible for end-to-end ownership of SmartNIC infrastructure platforms, including fleet orchestration, IaC deployment systems, and multi-environment validation frameworks across distributed Linux and bare-metal infrastructure.
 Focused on eliminating manual infrastructure workflows and enabling scalable, automated execution pipelines for OS, kernel, and hardware-level systems.
@@ -20,7 +20,7 @@ Focused on eliminating manual infrastructure workflows and enabling scalable, au
 - GitOps CI/CD Infrastructure: Engineered a self-hosted GitLab Runner platform using Podman-in-Podman containerized execution, orchestrating Ansible and Terraform workflows for GitOps-based infrastructure automation, integrating OCI Vault for secure secret management and runtime execution
 
 ### Lenovo
-##### Test Engineer, August 2019 - February 2022, Nuevo León, México
+##### Test & Systems Infrastructure Engineer, August 2019 - February 2022, Nuevo León, México
 Engineered infrastructure automation solutions for large-scale manufacturing environments, designing provisioning systems and automation platforms for Linux/Windows hosts, network infrastructure, and hardware validation workflows.
 Focused on replacing manual deployment and testing processes with scalable automation, improving system reliability and enabling repeatable provisioning across diverse hardware platforms, including workstations, laptops, and tablets.
 Worked at the intersection of infrastructure, operating systems, networking, and manufacturing systems, building internal tooling that supported high-volume production environments through automation and systems engineering.
