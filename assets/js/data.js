@@ -22,7 +22,7 @@ const data = {
       "type": "work",
       "items": [
         {
-          "position": "Senior Systems Software Engineer",
+          "position": "Senior Infrastructure & Systems Engineer (OCI/Linux)",
           "company": "Oracle",
           "years": "May 2022 - Present",
           "location": "Remote, México",
@@ -35,7 +35,7 @@ const data = {
           ]
         },
         {
-          "position": "Test Engineer",
+          "position": "Test & Systems Infrastructure Engineer",
           "company": "Lenovo",
           "years": "August 2019 - February 2022",
           "location": "Nuevo León, México",
