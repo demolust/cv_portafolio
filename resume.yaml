@@ -20,7 +20,7 @@ sections:
     title: "Experience"
     type: "work"
     items:
-      - position: "Senior Infrastructure & Systems Engineer (OCI/Linux)"
+      - position: "Senior Systems Software Engineer"
         company: "Oracle"
         years: "May 2022 - Present"
         location: "Remote, México"
@@ -34,7 +34,7 @@ sections:
           - "OCI Infrastructure Debug Platform: Built an OCI-based infrastructure bastion for SmartNIC and bare-metal environments, enabling centralized system-level debugging (tcpdump, kdump, kernel tracing, hardware diagnostics) across hosts, SmartNICs, BMC, and ILOM systems supporting infrastructure operations, debugging and production system reliability validation across distributed Linux environments"
           - "GitOps CI/CD Infrastructure: Engineered a self-hosted GitLab Runner platform using Podman-in-Podman containerized execution, orchestrating Ansible and Terraform workflows for GitOps-based infrastructure automation, integrating OCI Vault for secure secret management and runtime execution"
 
-      - position: "Test & Systems Infrastructure Engineer"
+      - position: "Test Engineer"
         company: "Lenovo"
         years: "August 2019 - February 2022"
         location: "Nuevo León, México"
