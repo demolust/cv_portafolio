@@ -31,8 +31,10 @@ jobs:
       - name: Set name as env
         run: echo "NAME=$(grep fullName resume.yaml | awk -F ':' '{print $2}' | tr -d '"' | sed 's/ //')" >> $GITHUB_ENV
 
-      - name: Install exiftool, pandoc, wkhtmltopdf
-        run: sudo apt update && sudo apt install -y pandoc wkhtmltopdf libimage-exiftool-perl
+      - name: Install PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc weasyprint libimage-exiftool-perl
 
       - name: Run fix render script
         run: |
@@ -42,15 +44,9 @@ jobs:
         run: |
           pandoc "resume_fixed.md" -t html -f markdown+hard_line_breaks -c "assets/css/normalize.css" --embed-resources --standalone -o "resume.html"
 
-      - name: Run render commands
-        run: |
-          sed -i 's/<body[^>]*>/&<div class="pre-wrapper">/g' "resume.html"
-          sed -i 's/<h3/<\/div><div class="job-entry"><h3/g' "resume.html"
-          sed -i 's/<\/body>/<\/div><\/body>/g' "resume.html"
-
       - name: Convert to pdf
         run: |
-          wkhtmltopdf --quiet --enable-local-file-access "resume.html" "resume.pdf"
+          weasyprint "resume.html" "resume.pdf"
 
       - name: Modify PDF metadata with exiftool
         run: |
